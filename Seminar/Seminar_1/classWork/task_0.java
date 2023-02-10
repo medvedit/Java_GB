@@ -1,3 +1,9 @@
+/*
+ *  Настроить проект, вывести в консоль “Hello world!”.
+ *  Вывести в консоль системные дату и время.
+ *
+ */
+
 package Java_GB.Seminar.Seminar_1.classWork;
 
 import java.time.LocalDateTime;
