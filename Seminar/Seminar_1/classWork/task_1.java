@@ -18,7 +18,7 @@ import java.time.LocalTime;
 import java.util.Scanner;
 
 public class task_1 {
-            // задание 1
+    // задание 1
     public static void main(String[] args) {
         try (Scanner iScanner = new Scanner(System.in)) { // input автоматически закроется.
             System.out.printf("Введите имя: ");
@@ -40,7 +40,7 @@ public class task_1 {
             System.out.println(name);
         } catch (Exception e) {
             // Обработка исключения, если возникло.
-            e.printStackTrace();
+            System.out.println("Вы ввели не верное число или строку, будьте внимательнее.");
         }
 
     }
