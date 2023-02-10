@@ -21,9 +21,9 @@ public class task_1 {
             // задание 1
     public static void main(String[] args) {
         try (Scanner iScanner = new Scanner(System.in)) { // input автоматически закроется.
-            System.out.println("Введите имя: ");
-            String name = iScanner.next();
-            System.out.println("Привет, " + name);
+            System.out.printf("Введите имя: ");
+            String name = iScanner.nextLine();
+            System.out.printf("Привет, %s%n", name);
 
             // задание 1*
             int hour = LocalTime.now().getHour();
