@@ -18,27 +18,30 @@ import java.time.LocalTime;
 import java.util.Scanner;
 
 public class task_1 {
-        // задание 1
+            // задание 1
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Введите имя: ");
-        String name = scanner.next();
-        System.out.println("Привет, "+ name);
+        try (Scanner iScanner = new Scanner(System.in)) { // input автоматически закроется.
+            System.out.println("Введите имя: ");
+            String name = iScanner.next();
+            System.out.println("Привет, " + name);
 
-        // задание 1*
-        int hour = LocalTime.now().getHour();
+            // задание 1*
+            int hour = LocalTime.now().getHour();
 
-        if (hour >= 5 && hour < 12) {
-            System.out.println("Доброе утро,");
-        } else if (hour>=12 && hour<18) {
-            System.out.print("Добрый день, ");
-        } else if (hour>=18 && hour<23) {
-            System.out.print("Добрый вечер, ");
-        } else {
-            System.out.print("Доброй ночи, ");
+            if (hour >= 5 && hour < 12) {
+                System.out.println("Доброе утро,");
+            } else if (hour >= 12 && hour < 18) {
+                System.out.print("Добрый день, ");
+            } else if (hour >= 18 && hour < 23) {
+                System.out.print("Добрый вечер, ");
+            } else {
+                System.out.print("Доброй ночи, ");
+            }
+            System.out.println(name);
+        } catch (Exception e) {
+            // Обработка исключения, если возникло.
+            e.printStackTrace();
         }
-        System.out.println(name);
-
 
     }
 
