@@ -5,11 +5,12 @@ public class task_1 {
 
     public static void main(String[] args) {
 
-        task_1(10, 'a', 'b');
+        task_(9, 'a', 'b');
+        System.out.println(createStringForNumber(9, 's', 'k'));
 
     }
 
-    public static void task_1(int n, char c1, char c2) {
+    public static void task_(int n, char c1, char c2) {
         StringBuilder result = new StringBuilder();
         while (true) {
             result.append(c1);
@@ -24,25 +25,6 @@ public class task_1 {
         System.out.println(result);
     }
 
-    public static String getString(int n, char c1, char c2) {
-        StringBuilder result = new StringBuilder();
-        if (n % 2 == 0){
-            for (int i = 0; i < n; i++) {
-                result.append(i % 2 == 0 ? c1 : c2);
-            }
-            return result.toString();
-        }
-        return null;
-    }
-
-    public static StringBuilder stringLength(int n, char c1, char c2) {
-    StringBuilder result = new StringBuilder();
-        for (int i = 0; i < n; i++) {
-            result.append(c1);
-            result.append(c2);
-        }
-        return result;
-    }
     public static String createStringForNumber(int n, char c1, char c2) {
         String result = "";
         for (int i = 0; i < n; i++) {
