@@ -24,8 +24,9 @@ public class task_2 {
         int[] numArray = new int[10]; // создали список, длина 10 элементом.
 
         for (int i = 0; i < numArray.length; i++) { // прошли в цикле от 0 элемента и по всей длине, и...
-            numArray[i] = 1 + random.nextInt(100); // заполнили массив с цифры 1 до 99.
+            numArray[i] = 1 + random.nextInt(100); // заполнили массив с цифры 1 до 100.
         }
+        // System.out.println(Arrays.toString(numArray)); // вывод в консоль созданного массива чисел.
         return numArray; // вернули значение массива.
     }
 
