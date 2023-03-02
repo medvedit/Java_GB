@@ -39,6 +39,7 @@ public class compareTwoArrays {
         // int[] b = new int[] { 9, 8, 7, 9, 7, 4 };
 
         findLengthThroughSet(a, b);
+        FindMaxLength(a, b);
 
     }
 
@@ -67,5 +68,24 @@ public class compareTwoArrays {
                 }
             }
         }System.out.println(maxLength);
+    }
+    static void FindMaxLength(int[] array1, int[] array2) {
+
+        int[][] tempArr = new int[array1.length + 1][array2.length + 1];
+
+        for (int i = array1.length - 1; i >= 0; i--) {
+            for (int j = array2.length - 1; j >= 0; j--) {
+                if (array1[i] == array2[j])
+                    tempArr[i][j] = tempArr[i + 1][j + 1] + 1;
+            }
+        }
+        int max = 0;
+        for (int i = 0; i < array1.length; i++) {
+            for (int j = 0; j < array2.length; j++) {
+                max = Math.max(max, tempArr[i][j]);
+            }
+        }
+
+        System.out.printf("Максимальная длина подмассива, который появляется в обоих массивах = %d\n", max);
     }
 }
