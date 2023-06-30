@@ -1,3 +1,5 @@
+package ru.medwedSA.Java_Core_GB.Lectures.Lecture_1;
+
 /*
  *      Явные и не явные преобразования:
  *
@@ -7,8 +9,6 @@
  *                     ↓  ⤩  ↓
  *                   float  double
  */
-
-package ru.medwedSA.Java_Core_GB.Lectures.Lecture_1;
 
 public class DataTypeConversions {
     public static void main(String[] args) {
