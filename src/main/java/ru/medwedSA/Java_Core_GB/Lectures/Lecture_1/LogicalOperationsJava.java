@@ -1,3 +1,5 @@
+package ru.medwedSA.Java_Core_GB.Lectures.Lecture_1;
+
 /*
  *  Присваивание:        =
  *  Арифметические:      *, /, +, -, %, ++, -- (++ инкремент, -- декремент)
@@ -5,7 +7,6 @@
  *  Логические операции: ||, &&, ^, !
  *  Побитовые операции:  <<, >>, &, |, ^
  */
-package ru.medwedSA.Java_Core_GB.Lectures.Lecture_1;
 
 public class LogicalOperationsJava {
     public static void main(String[] args) {
@@ -40,18 +41,17 @@ public class LogicalOperationsJava {
         // ! -> инверсия
 
         int l = 8;
-        // 1000 -> двоичный код.
+        // 8 = 1000 -> двоичный код.
         // l = l << 1; // сдвигаем влево на 1 бит.
-        System.out.println(l << 1); // получим в ответе число 16 или,
-        // 10000 в двоичном коде.
+        System.out.println( l << 1 ); // получим в ответе число 16 или, 10000 в двоичном коде.
         int p = 18;
-        // 10010 -> двоичный код.
-        System.out.println(p >> 1); // 9
-        // 1001 в двоичном коде.
+        //  18 = 10010 -> двоичный код.
+        // p = p >> 1; // сдвигаем вправо на 1 бит.
+        System.out.println( p >> 1 ); // получим в ответе число 9 или 1001 в двоичном коде.
 
         int n = 5;
         int m = 2;
-        System.out.println(n | m); // 7 звучит как 5 ИЛИ 2 и считается в двоичном исполнении:
+        System.out.println( n | m ); // 7 звучит как 5 ИЛИ 2, и считается в двоичном исполнении:
         // 101 -> 5
         // 010 -> 2
         // 111 -> 7
@@ -74,6 +74,10 @@ public class LogicalOperationsJava {
         boolean c = h.length() >= 4 & h.charAt(4) == 'u'; // false
         System.out.println(y);
         System.out.println(c);
+
+        int num = 123;
+        num = num-- - --num;
+        System.out.println(num); //Ответ 2. А почему? Понял прочитав тут -> https://skillbox.ru/media/base/inkrement_i_dekrement_v_java/
 
     }
 }
