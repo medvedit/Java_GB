@@ -1,8 +1,9 @@
+package ru.medwedSA.Java_Core_GB.Lectures.Lecture_1;
+
 /*
  * Форматированный вывод данных.
+ * Плейсхолдеры.
  */
-
-package ru.medwedSA.Java_Core_GB.Lectures.Lecture_1;
 
 public class FormattedOutputData {
     public static void main(String[] args) {
