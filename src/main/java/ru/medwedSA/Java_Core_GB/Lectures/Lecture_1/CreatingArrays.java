@@ -1,11 +1,11 @@
+package ru.medwedSA.Java_Core_GB.Lectures.Lecture_1;
+
+import java.util.Arrays;
+
 /*
  * Создание одномерного массива заполненного нулями.
  * Положили значение 13 на 3 индекс и вывели в консоль.
  */
-
-package ru.medwedSA.Java_Core_GB.Lectures.Lecture_1;
-
-import java.util.Arrays;
 
 public class CreatingArrays {
     public static void main(String[] args) {
@@ -25,7 +25,7 @@ public class CreatingArrays {
         // Базовый функционал о массивах можно получить через: имяМассива. (имя массива + . )
 
         // Объявление двумерного массива:
-        int[][] arr1 = new int[3][5];
+        int[] arr1[] = new int[3][5];
 
         for (int[] line : arr1) {
             for (int item : line) {
