@@ -2,6 +2,7 @@ package ru.medwedSA.Java_Core_GB.Lectures.Lecture_1;
 
 import java.util.Arrays;
 
+
 /**
  * В языке Java типы данных делятся на две группы:
  *  1) Ссылочные
@@ -9,6 +10,10 @@ import java.util.Arrays;
  *  ниже в коде создание переменных с присвоением типа и значения. Вывод в консоль значения переменных.
  */
 public class DataType {
+
+    public static String getType(Object o) { // метод определения типа данных.
+        return o.getClass().getSimpleName();
+    }
 
     public static class referenceType { // класс ссылочных типов
 
@@ -24,10 +29,16 @@ public class DataType {
         static float floatNumber = -19.99F; // У типа данных float при присвоении значения обязательное добавление
                                             // буквы F на конце значения.
         static double doubleNumber = 199999.99;
+
+
+
     }
 
 
     public static void main(String[] args) { // Метод main - точка входа, метод запуска кода.
+
+        int num = 1234567887;
+
 
         System.out.println(referenceType.strFirst);
         // Вывод начального значения строки. Класс referenceType, переменная strFirst
@@ -36,8 +47,10 @@ public class DataType {
         System.out.println(Arrays.toString(referenceType.arrays));
         // Вывод значений массива в консоль.
 
-        System.out.println(primitiveType.intNumber);
+        System.out.println(primitiveType.intNumber - num); // При выводе посчитали арифметическое значение.
         // Вывод значения int, переменной intNumber консоль. Класс primitiveType
+        System.out.println(getType(primitiveType.intNumber));
+        // Вывод в консоль типа данных переменой intNumber
         System.out.println(primitiveType.shortNumber);
         // Вывод значения short, переменной shortNumber консоль. Класс primitiveType
         System.out.println(primitiveType.floatNumber);
@@ -45,11 +58,17 @@ public class DataType {
         System.out.println(primitiveType.doubleNumber);
         // Вывод значения double, переменной shortNumber консоль. Класс primitiveType
 
-
-        char cc = '1';
-        System.out.println(Character.isDigit(cc)); // true // -> проверка на число в переменной cc.
-        char cc1 = 'a';
-        System.out.println(Character.isDigit(cc1)); // false // -> проверка на число в переменной cc1,
+        /*
+        * тип данных char - определяет один символ, указывается в одинарных кавычках.
+        */
+        char ch = 38; // Если в переменную char положить целое число, то тип данных char воспримет это число
+                      // как хеш код и в таблице символов, по номеру этого хеш кода присвоит значение.
+        System.out.println(ch); // вывод значения char по хеш коду 38.
+        char ch1 = '1'; // создал и присвоил значение.
+        System.out.println(Character.hashCode(ch1)); // можно посмотреть хеш код в таблице символов.
+        System.out.println(Character.isDigit(ch1)); // true // -> проверка на число в переменной cc.
+        char ch2 = 'a'; // создал и присвоил значение.
+        System.out.println(Character.isDigit(ch2)); // false // -> проверка на число в переменной cc1,
 
     }
 
