@@ -1,10 +1,10 @@
+package ru.medwedSA.Java_Core_GB.Lectures.Lecture_1;
+
 /*
  *  Функции и методы — это технически одно и то же. Функции могут
  *  не принадлежать классам, а методы принадлежать.
  *  В java все функции являются методами.
  */
-
-package ru.medwedSA.Java_Core_GB.Lectures.Lecture_1;
 
 public class FunctionsEndMethods {
 
@@ -16,7 +16,7 @@ public class FunctionsEndMethods {
         return a + b;
     }
 
-    static double factor(int n) {
+    static double factor(int n) { // Рекурсия.
         if (n == 1)
             return 1;
         if (n == 0)
@@ -47,40 +47,9 @@ public class FunctionsEndMethods {
     static void ternary() {
         int a = 2;
         int b = 5;
-        int min = a < b ? a : b; // Звучит как -> Если условие a < b выполняется, то
+        int min = a < b ? a : b; // Тернарный оператор. Звучит как -> Если условие a < b выполняется, то
                                // ВЕРНЕТСЯ часть до двоеточия, то есть в данном примере вернется a, иначе вернется b.
         System.out.println(min);
-    }
-    static String text(int a){
-        switch (a) {
-            case 1:
-                return String.format("Доброе утро");
-            case 2:
-                return String.format("Добрый день");
-            case 3:
-                return String.format("Добрый вечер");
-            default:
-                return String.format("Что то поло не так...");
-        }
-    }
-    static void text2(int a){
-        switch (a) {
-            case 1:
-            case 2:
-            case 3:
-            case 4:
-                System.out.println("Как дела?");
-                break; // В этом коде break обязателен!
-            case 5:
-                System.out.println("Чем занят?");
-                break; // В этом коде break обязателен!
-            case 6:
-                System.out.println("Идем на футбол???");
-                break; // В этом коде break обязателен!
-            default: // Это не обязательная ветка.
-                System.out.println("Разговор не задался...");
-                break; // В этом коде break обязателен!
-        }
     }
 
     public static void main(String[] args) {
@@ -91,7 +60,5 @@ public class FunctionsEndMethods {
         System.out.println(assign(5, 8)); // 8.0
         assign2(10, 3); // 10.0
         ternary(); // 2
-        System.out.println(text(2)); // Добрый день
-        text2(2); // Как дела?
     }
 }
