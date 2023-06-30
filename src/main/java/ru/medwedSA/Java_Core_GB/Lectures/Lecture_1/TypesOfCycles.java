@@ -1,3 +1,4 @@
+package ru.medwedSA.Java_Core_GB.Lectures.Lecture_1;
 
 /*
     Циклы:
@@ -6,9 +7,7 @@
         ●  цикл while;
         ●  цикл do while;
         ●  цикл for; и его модификация ● foreach;
-
  */
-package ru.medwedSA.Java_Core_GB.Lectures.Lecture_1;
 
 public class TypesOfCycles {
 
@@ -86,7 +85,7 @@ public class TypesOfCycles {
 
         int[] arr = new int[] { 1, 3, 6, 4, 34, 11 };
 
-        for (int item : arr) {
+        for (int item : arr) { // Паттерн "iter"
             item = 1; // и все значения элементов в массиве изменятся на цифру 1
             System.out.print(item);
 
@@ -96,6 +95,43 @@ public class TypesOfCycles {
         for (int item : arr) {
 //             item = 88888; // Раскомментировать и перезапустить код.
             System.out.println(item);
+        }
+    }
+
+    static String text(int a){
+        switch (a) {
+            case 1:
+                return "Доброе утро";
+            case 2:
+                return String.format("Добрый день"); // String.format  писать необязательно.
+            case 3:
+                return String.format("Добрый вечер");
+            default:
+                return String.format("Что то поло не так...");
+        }
+    }
+    static void text2(int a) {
+        String msg = "";
+        switch (a) {
+            case 1:
+            case 2:
+            case 3:
+            case 4:
+                msg = "Как дела?";
+                System.out.println(msg);
+                break; // В этом коде break обязателен!
+            case 5:
+                msg = "Чем занят?";
+                System.out.println(msg);
+                break; // В этом коде break обязателен!
+            case 6:
+                msg = "Идем на футбол???";
+                System.out.println(msg);
+                break; // В этом коде break обязателен!
+            default: // Это не обязательная ветка.
+                msg = "Разговор не задался...";
+                System.out.println(msg);
+                break; // В этом коде break обязателен!
         }
     }
 
@@ -109,7 +145,8 @@ public class TypesOfCycles {
         num(); // 55
         doubleArray();
         for_in();
-
+        System.out.println(text(2)); // Добрый день
+        text2(2); // Как дела?
     }
 
 }
