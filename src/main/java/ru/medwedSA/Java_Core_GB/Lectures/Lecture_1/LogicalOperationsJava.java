@@ -51,27 +51,30 @@ public class LogicalOperationsJava {
 
         int n = 5;
         int m = 2;
-        System.out.println( n | m ); // 7 звучит как 5 ИЛИ 2, и считается в двоичном исполнении:
+        System.out.println( n | m ); // Ответ: 7. | -> побитовое ИЛИ, и считается в двоичном исполнении:
         // 101 -> 5
         // 010 -> 2
         // 111 -> 7
         int g = 6;
         int q = 3;
-        System.out.println(g & q); // 2
+        System.out.println(g & q); // Ответ: 2. & -> побитовое И.
         // 110 -> 6
         // 011 -> 3
         // 010 -> 2
         int u = 7;
         int z = 4;
-        System.out.println(u ^ z); // 3
+        System.out.println(u ^ z); // Ответ: 3. ^ -> побитовое РАЗДЕЛИТЕЛЬНОЕ ИЛИ.
         // 111 -> 7
         // 100 -> 4
         // 011 -> 3
 
+        /*
+         * То, что вложено в логику кода написанного ниже стоит послушать лектора. Лекция 1 с 52:30 (время. мин и сек)
+         */
         String h = "unary"; // длинна 5, индекс 0...4
-        boolean y = h.length() >= 4 && h.charAt(3) == 'r'; // true двойной знак && -> быстрая операция. Левую часть
+        boolean y = h.length() >= 5 && h.charAt(3) == 'r'; // true двойной знак && -> быстрая операция. Левую часть
                                                                 // смотрит, а правую может и не смотреть.
-        boolean c = h.length() >= 4 & h.charAt(4) == 'u'; // false
+        boolean c = h.length() >= 5 & h.charAt(3) == 'u'; // false
         System.out.println(y);
         System.out.println(c);
 
