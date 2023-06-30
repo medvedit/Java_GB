@@ -1,8 +1,8 @@
+package ru.medwedSA.Java_Core_GB.Lectures.Lecture_1;
+
 /*
  *  Область видимости переменных:
  */
-
-package ru.medwedSA.Java_Core_GB.Lectures.Lecture_1;
 
 public class VariableScope {
     public static void main(String[] args) {
@@ -14,7 +14,7 @@ public class VariableScope {
 
         {
             int i = 123;
-            System.out.println(i); //123
+            System.out.println(i); // 123
         }
         // System.out.println(i); // error: cannot find symbol
 
