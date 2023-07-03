@@ -24,26 +24,24 @@ public class task_1 {
     public static void main(String[] args) {
         try (Scanner iScanner = new Scanner(System.in)) { // Scanner автоматически закроется.
             System.out.print("Введите имя: ");
-            String name = iScanner.nextLine();
-            System.out.printf("Привет, %s\n", name);
+            String userName = iScanner.nextLine();
+            System.out.printf("Привет, %s\n", userName);
 
     // задание 1*
 
             int hour = LocalTime.now().getHour();
 
             if (hour >= 5 && hour < 12) {
-                System.out.println("Доброе утро,");
+                System.out.println("Доброе утро, " + userName);
             } else if (hour >= 12 && hour < 18) {
-                System.out.print("Добрый день, ");
+                System.out.println("Добрый день, " + userName);
             } else if (hour >= 18 && hour < 23) {
-                System.out.print("Добрый вечер, ");
+                System.out.println("Добрый вечер, " + userName);
             } else {
-                System.out.print("Доброй ночи, ");
+                System.out.println("Доброй ночи, " + userName);
             }
-            System.out.println(name);
-        } catch (Exception e) {
-            // Обработка исключения, если возникло.
-            System.out.println("Вы ввели не верное число или строку, будьте внимательнее.");
+        } catch (Exception e) { // Обработка исключения, если возникло.
+            e.printStackTrace();
         }
     }
 }
