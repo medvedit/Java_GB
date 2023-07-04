@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2023-07-04T08:56:02.169895Z</date>
+  <millis>1688460962169</millis>
+  <nanos>895000</nanos>
+  <sequence>0</sequence>
+  <logger>ru.medwedSA.Java_Core_GB.Lectures.Lecture_2.loggingFile</logger>
+  <level>WARNING</level>
+  <class>ru.medwedSA.Java_Core_GB.Lectures.Lecture_2.loggingFile</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Тестовое логирование 1</message>
+</record>
+<record>
+  <date>2023-07-04T08:56:02.254067Z</date>
+  <millis>1688460962254</millis>
+  <nanos>67000</nanos>
+  <sequence>1</sequence>
+  <logger>ru.medwedSA.Java_Core_GB.Lectures.Lecture_2.loggingFile</logger>
+  <level>INFO</level>
+  <class>ru.medwedSA.Java_Core_GB.Lectures.Lecture_2.loggingFile</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Тестовое логирование 2</message>
+</record>
+</log>
