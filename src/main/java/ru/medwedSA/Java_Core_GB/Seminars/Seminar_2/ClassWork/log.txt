@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2023-07-05T11:23:33.387700Z</date>
+  <millis>1688556213387</millis>
+  <nanos>700000</nanos>
+  <sequence>0</sequence>
+  <logger>ru.medwedSA.Java_Core_GB.Seminars.Seminar_2.ClassWork.task_5</logger>
+  <level>INFO</level>
+  <class>ru.medwedSA.Java_Core_GB.Seminars.Seminar_2.ClassWork.task_5</class>
+  <method>writingDataToFileAndLoggingExceptions</method>
+  <thread>1</thread>
+  <message>Ошибка записи данных в файл..........</message>
+</record>
+</log>
