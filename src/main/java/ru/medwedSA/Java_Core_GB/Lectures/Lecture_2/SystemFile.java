@@ -26,7 +26,7 @@ package ru.medwedSA.Java_Core_GB.Lectures.Lecture_2;
 import java.io.File;
 import java.io.FileWriter;
 
-public class systemFile {
+public class SystemFile {
 
     private static final String USER_DIR = "user.dir";
     private static final String ADDRESS_FILE_TXT = "/files/file.txt";

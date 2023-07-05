@@ -5,7 +5,7 @@ package ru.medwedSA.Java_Core_GB.Lectures.Lecture_1;
  * Что бы определить к какому типу данных приведено значение перемененной var (не явная типизация)
  * используется метод getType.
  */
-public class var_getType {
+public class VarGetType {
     public static void main(String[] args) {
         var a = 123;
         System.out.println(a); // 123

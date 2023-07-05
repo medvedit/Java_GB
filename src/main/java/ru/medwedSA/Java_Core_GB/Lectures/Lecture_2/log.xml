@@ -6,9 +6,9 @@
   <millis>1688460962169</millis>
   <nanos>895000</nanos>
   <sequence>0</sequence>
-  <logger>ru.medwedSA.Java_Core_GB.Lectures.Lecture_2.loggingFile</logger>
+  <logger>ru.medwedSA.Java_Core_GB.Lectures.Lecture_2.IoggingFile</logger>
   <level>WARNING</level>
-  <class>ru.medwedSA.Java_Core_GB.Lectures.Lecture_2.loggingFile</class>
+  <class>ru.medwedSA.Java_Core_GB.Lectures.Lecture_2.IoggingFile</class>
   <method>main</method>
   <thread>1</thread>
   <message>Тестовое логирование 1</message>
@@ -18,9 +18,9 @@
   <millis>1688460962254</millis>
   <nanos>67000</nanos>
   <sequence>1</sequence>
-  <logger>ru.medwedSA.Java_Core_GB.Lectures.Lecture_2.loggingFile</logger>
+  <logger>ru.medwedSA.Java_Core_GB.Lectures.Lecture_2.IoggingFile</logger>
   <level>INFO</level>
-  <class>ru.medwedSA.Java_Core_GB.Lectures.Lecture_2.loggingFile</class>
+  <class>ru.medwedSA.Java_Core_GB.Lectures.Lecture_2.IoggingFile</class>
   <method>main</method>
   <thread>1</thread>
   <message>Тестовое логирование 2</message>

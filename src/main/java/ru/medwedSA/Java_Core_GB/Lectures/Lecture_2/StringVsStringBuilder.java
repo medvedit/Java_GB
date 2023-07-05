@@ -44,7 +44,7 @@ package ru.medwedSA.Java_Core_GB.Lectures.Lecture_2;
     Много изменении или много добавлений в строку – Выгоднее использовать -> StringBuilder (является mutable)
  */
 
-public class stringVsStringBuilder {
+public class StringVsStringBuilder {
 
     public static void main(String[] args) {
 

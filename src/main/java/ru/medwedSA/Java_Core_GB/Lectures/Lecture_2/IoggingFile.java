@@ -46,10 +46,10 @@ import java.io.IOException;
 import java.util.logging.*;
 
 
-public class loggingFile {
+public class IoggingFile {
     public static void main(String[] args) throws IOException {
 
-        Logger logger = Logger.getLogger(loggingFile.class.getName());
+        Logger logger = Logger.getLogger(IoggingFile.class.getName());
         ConsoleHandler ch = new ConsoleHandler();
          FileHandler fh = new FileHandler("/Users/Medwed_SA/Desktop/Education/" +
                  "Java/project_IntelliJ_IDEA/Java_GB/src/main/java/ru/medwedSA/" +

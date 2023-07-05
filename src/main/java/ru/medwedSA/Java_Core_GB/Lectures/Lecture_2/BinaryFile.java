@@ -9,7 +9,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;
 
-public class binaryFile {
+public class BinaryFile {
 
     static ByteOrder bOrder = ByteOrder.LITTLE_ENDIAN;
     static Map<String, String> data = new HashMap<>();
