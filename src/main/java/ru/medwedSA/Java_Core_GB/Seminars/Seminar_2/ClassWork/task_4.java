@@ -15,6 +15,7 @@ public class task_4 {
             "Java_Core_GB/Seminars/Seminar_2/ClassWork/TEST.txt"; // Адрес для создания, работы с фалом.
 
     public static void main(String[] args) {
+//        getType(get100WordTest()); // java.lang.String
         writingToFile();
     }
 
@@ -32,5 +33,9 @@ public class task_4 {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    static void getType(Object obj){ // Метод выводит -> класс + имя класса.
+        System.out.println(obj.getClass().getName());
     }
 }
