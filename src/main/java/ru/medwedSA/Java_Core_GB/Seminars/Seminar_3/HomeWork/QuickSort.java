@@ -98,7 +98,7 @@ public class QuickSort {
     }
 
 
-    public static int[] randomArray() { // метод создания массива целых чисел, Random.
+    private static int[] randomArray() { // метод создания массива целых чисел, Random.
         Random random = new Random();
         int[] numArray = new int[16]; // создали список, длина 10 элементом.
 
