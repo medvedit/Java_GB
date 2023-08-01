@@ -19,7 +19,7 @@ public class InsertionSort {
 		System.out.println(Arrays.toString(arr));
 	}
 
-	private static void insertSort(int[] array) { // Сортировка вставкой с помощью цикла for и while (Классический)
+	public static void insertSort(int[] array) { // Сортировка вставкой с помощью цикла for и while (Классический)
 		for (int i = 1; i < array.length; i++) {
 			int current = array[i]; // Сохраняем значение элемента.
 			int j = i; // Заводим переменную равную индексу i.
