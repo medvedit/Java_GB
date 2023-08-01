@@ -13,7 +13,7 @@ package ru.medwedSA.Java_Core_GB.Seminars.Seminar_3.HomeWork;
 import java.util.Arrays;
 import java.util.Random;
 
-public class QuickSort2 {
+public class QuickSort {
 
     public static void main(String[] args) {
 
