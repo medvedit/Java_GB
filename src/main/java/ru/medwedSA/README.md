@@ -51,9 +51,12 @@ API (Application programming interface) —
 с описаниями работы методов, ссылками на материалы.   
 ### Перечисленные методы:
 - BubbleSort
+- CombSort
 - CountingSort
 - InsertionSort
 - MergeSortForArray
 - MergeSortForArrayList
 - QuickSort
 - RadixSort
+- SelectionSort
+- ShuttleSort
