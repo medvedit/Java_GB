@@ -63,6 +63,6 @@ public class ShuttleSort {
         for (int i = 0; i < numArray.length; i++) { // прошли в цикле от 0 элемента и по всей длине, и...
             numArray[i] = 1 + random.nextInt(100); // заполнили массив с цифры 1 до 100.
         }
-        return numArray; // вернули значение массива.
+        return numArray; // вернули заполненный массив.
     }
 }
