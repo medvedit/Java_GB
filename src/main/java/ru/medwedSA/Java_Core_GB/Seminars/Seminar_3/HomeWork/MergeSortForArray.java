@@ -25,26 +25,22 @@ import java.util.Arrays;
 
 public class MergeSortForArray {
     public static void main(String[] args) {
-        int[] inArray = numArray();
+
+        int[] inArray = randomArray();
         System.out.println(Arrays.toString(inArray));
-        int[] sortArray = mergeSort(inArray);
-        System.out.println(Arrays.toString(sortArray));
+
+        int[] sortedArray = mergeSort(inArray);
+        System.out.println(Arrays.toString(sortedArray));
+
     }
 
-    private static int[] numArray() {
-        int[] array = new int[12];
-        for (int i = 0; i < array.length; i++) {
-            array[i] = (int) Math.round((Math.random() * 30) - 15);
-        }
-        return array;
-    }
-    public static int[] mergeSort(int[] src) {
+    public static int[] mergeSort(int[] acceptedArray) {
 
-        if (src.length <= 1) {
-            return src;
+        if (acceptedArray.length <= 1) {
+            return acceptedArray;
         }
-        int[] left = Arrays.copyOfRange(src, 0, src.length / 2);
-        int[] right = Arrays.copyOfRange(src, left.length, src.length);
+        int[] left = Arrays.copyOfRange(acceptedArray, 0, acceptedArray.length / 2);
+        int[] right = Arrays.copyOfRange(acceptedArray, left.length, acceptedArray.length);
 
         return merge(mergeSort(left), mergeSort(right));
     }
@@ -66,5 +62,23 @@ public class MergeSortForArray {
             else result[resIn++] = right[rightIn++];
 
         return result;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    private static int[] randomArray() {
+        int[] array = new int[12];
+        for (int i = 0; i < array.length; i++) {
+            array[i] = (int) Math.round((Math.random() * 30) - 15);
+        }
+        return array;
     }
 }
