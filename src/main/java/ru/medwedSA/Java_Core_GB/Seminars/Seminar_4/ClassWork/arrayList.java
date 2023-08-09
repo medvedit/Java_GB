@@ -1,3 +1,7 @@
+/**
+ *  Структуры данных в картинках. ArrayList -> https://habr.com/ru/articles/128269/
+ */
+
 package ru.medwedSA.Java_Core_GB.Seminars.Seminar_4.ClassWork;
 
 import java.util.ArrayList;
