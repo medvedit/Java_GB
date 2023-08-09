@@ -7,9 +7,11 @@ package ru.medwedSA.Java_Core_GB.Seminars.Seminar_4.ClassWork;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-class ArrayListRemoveFor {
+class ArrayListExample {
 
     public static void main(String[] args) {
+
+//  ===================================== Удаление элемента с помощью цикла for =======================================
 
         ArrayList<String> states = new ArrayList<>();
 
@@ -18,7 +20,6 @@ class ArrayListRemoveFor {
         states.add("Германия");
         states.add("Португалия");
         states.add("Перу");
-
         System.out.println(states); //[Франция, Франция, Германия, Португалия, Перу]
 
         for (int i = 0; i < states.size(); i++) {
@@ -34,13 +35,8 @@ class ArrayListRemoveFor {
         }
         System.out.println(states); // [Франция, Германия, Португалия, Перу]
 
-    }
-}
 
-class ArrayListRemoveIterator {
-
-    public static void main(String[] args) {
-
+//  ===================================== Удаление элемента с помощью iterator =======================================
 
         ArrayList<String> states_1 = new ArrayList<>();
 
@@ -49,7 +45,6 @@ class ArrayListRemoveIterator {
         states_1.add("Германия");
         states_1.add("Португалия");
         states_1.add("Канада");
-
         System.out.println(states_1); //[Франция, Франция, Германия, Португалия, Канада]
 
 //        states_1.removeIf(list -> list.equalsIgnoreCase("Франция")); // Эта строка замещает
@@ -62,7 +57,7 @@ class ArrayListRemoveIterator {
                 iterStates.remove(); // то удалить его.
             }
         }
-        System.out.println(states_1); // Вывод обработанного списка.
+        System.out.println(states_1); // [Германия, Португалия, Канада]
 
     }
 }
