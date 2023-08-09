@@ -48,8 +48,8 @@ class ArrayListRemoveIterator {
 
         System.out.println(states_1); //[Франция, Франция, Германия, Португалия, Канада]
 
-//          states_1.removeIf(list -> list.equalsIgnoreCase("Франция")); // Эта строка замещает
-//                                                                                  создание Iterator и весь цикл while.
+//        states_1.removeIf(list -> list.equalsIgnoreCase("Франция")); // Эта строка замещает
+                                                                                 // создание Iterator и весь цикл while.
 
         Iterator<String> iterStates = states_1.iterator(); // Создал итератор.
 
